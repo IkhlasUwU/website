@@ -1,0 +1,107 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+    overflow: hidden;
+}
+
+#background-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    filter: blur(5px);
+}
+
+#content {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    z-index: 2; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    overflow: hidden; 
+}
+
+#blur-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    filter: blur(5px); 
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 3em;
+}
+
+.message {
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    color: white;
+    z-index: 3; 
+    cursor: pointer; 
+    filter: none; 
+}
+
+#links-wrapper {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    top: calc(50% + 115px);
+    left: 50%; 
+    transform: translate(-50%, 0); 
+    padding: 20px; 
+    border-radius: 15px; 
+    background: rgba(0, 0, 0, 0.6); 
+    filter: blur(5px); 
+}
+
+#links {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px; 
+}
+
+.link {
+    display: block;
+}
+
+.link-image {
+    width:  35px; 
+    height: auto; 
+}
