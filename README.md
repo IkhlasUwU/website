@@ -1,0 +1,1 @@
+zhikr.dev
