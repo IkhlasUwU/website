@@ -14,12 +14,6 @@ body {
     line-height: 1.6;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    width: auto
-}
-
 a {
     color: #b38cff;
     font-weight: 600;
@@ -105,6 +99,17 @@ a:active {
     box-shadow: 4px 3px 6px #b38cff;
 }
 
+#imgError {
+    margin-top: 25px;
+    background-color: rgb(24, 21, 21);
+}
+
+#imgErrorImg {
+    max-width: 400px;
+    height: auto;
+    gap: 10px;
+}
+
 #rpsResults {
     margin-top: 20px
 }
@@ -136,4 +141,8 @@ a:active {
     gap: 1rem;
     position: relative;
     top: 10px;
+} .images img {
+    max-width: 100%;
+    height: auto;
+    width: auto
 }
