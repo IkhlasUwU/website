@@ -310,3 +310,5 @@ function jsGui(userChoice)
     winCount.textContent = `Wins: ${wins}`
     lossCount.textContent = `Losses: ${losses}`
     }
+
+    //adding comment so I can commmit
