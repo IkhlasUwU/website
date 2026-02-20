@@ -279,3 +279,34 @@ let num = 0
 
         container.appendChild(btn)
     }
+
+    
+let wins = 0
+let losses = 0
+    
+function jsGui(userChoice)
+    {
+        const choices = ["rock", "paper", "scissors"]
+        const botChoice = choices[Math.floor(Math.random() * 3)]
+        const winner = document.querySelector("#results")
+        const winCount = document.querySelector("#wins")
+        const lossCount = document.querySelector("#losses")
+        let result = "";
+
+    if (userChoice === botChoice) {
+        result = `It's a tie!`;
+    } else if (
+        (userChoice === "rock" && botChoice === "scissors") ||
+        (userChoice === "paper" && botChoice === "rock") ||
+        (userChoice === "scissors" && botChoice === "paper")
+    ) {
+        result = `You win! ${userChoice} beats ${botChoice}.`;
+        wins++
+    } else {
+        result = `You lose! ${botChoice} beats ${userChoice}.`;
+        losses++
+    }
+    winner.textContent = result;
+    winCount.textContent = `Wins: ${wins}`
+    lossCount.textContent = `Losses: ${losses}`
+    }
