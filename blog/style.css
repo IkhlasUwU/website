@@ -135,3 +135,37 @@ a:active {
     height: auto;
     width: auto
 }
+
+#grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    width: auto;
+    height: auto;
+    border-radius: 3px;
+    box-shadow: 4px 3px 3px #b38cff;
+}
+
+.cell {
+    width: 10px;
+    height: 10px;
+
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.colorPicker {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+} .colorPicker img:hover {
+    transform: scale(1.25);
+} .colorPicker img {
+    margin: 5px;
+    width: 20px;
+    height: 20px;
+}
+#defaultColor {
+    border-color: 2px solid white;
+}
