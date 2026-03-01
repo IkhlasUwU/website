@@ -3,7 +3,6 @@ const grid = document.getElementById("grid")
 
 let isMouseDown = false
 const totalCells = 5110
-console.log(`total cells: ${totalCells}`)
 let color = "purple"
 
 
