@@ -47,3 +47,6 @@ colorButtons.forEach(button => {
         event.target.style.border = "2px solid white"
     })
 })
+const defualt = document.getElementById("defaultColor")
+
+defualt.style.border = "2px solid white"
