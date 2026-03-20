@@ -35,6 +35,27 @@
     <!--Hero section-->
     <div class="hero">
 
+	<div class="section">
+		<h3 class="title">03/19/26</h3>
+		<h4>This password manager was more fun than I thought</h4>
+		<p>
+		   I have been just been working on this password manager, mainly.
+		   It's been a lot of fun and it's tought me a lot about linux filesystem too.
+		   I added a 2nd layer of encryption. Instead of keeping all the key's, cyphertext, and iv's
+		   all in one folder, I decided to tarball them and then pgp encrypt them. None of the AES
+		   cyphertext, keys, or IVs never touch the disk though. They get de-encrypted into ram, and
+		   then the 2nd de-encryption process de-encrypts them whenever you view that one password.
+		   for coming from a beginner, I feel like it's pretty safe. I also added a config file,
+		   it saves a default one to ~/.manager/appsettings.json file and you can change defaults there.
+		   I've been really obsessed with learning about encryption, and filestructure. I really like low
+		   level stuff, and am quite tempted to switch to C. Although, C# is actually a good language. I have
+		   learned that you can do anything in C#, and it's (kind of) easy (I'm still learning, there's so much
+		   more I need to learn).
+		</p>
+	</div>
+
+	<div class="spacer"></div>
+
         <div class="section">
             <h3 class="title">03/03/26</h3>
             <h4>Redid password manager</h4>
